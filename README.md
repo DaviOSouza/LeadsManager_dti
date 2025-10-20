@@ -29,6 +29,7 @@ cd NOME_DO_REPOSITORIO
 3.1 - No appsettings.json do backend colar sua string de conexão com o banco;
 
 3.2 - Criar a tabela com o script:
+
 CREATE TABLE Leads (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     FirstName NVARCHAR(100) NOT NULL,
@@ -45,11 +46,16 @@ CREATE TABLE Leads (
 
 ## **Executar Aplicação**
 1 - Abra um terminal na pasta raiz e vá até a Api: cd/backend/src/Leads.Api
+
 2 - Execute: dotnet run
+
 3 - Verifique a porta local, copie e cole-a no browser, por fim, adicione ao final da url /swagger
 
+
 4 - Abra outro terminal (deixe o da api rodando) e vá até Frontend: cd/frontend
+
 5 - Execute: npm start
+
 6 - O navegador deverá abrir automaticamente, se não, cole a url fornecida no browser
 
 ## **Testar Aplicação**
