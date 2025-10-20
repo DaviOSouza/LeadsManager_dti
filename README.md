@@ -16,6 +16,7 @@ Antes de rodar o projeto, você precisará ter instalado:
 ```bash
 git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 cd NOME_DO_REPOSITORIO
+```
 
 ## **Principais Instruções**
 
