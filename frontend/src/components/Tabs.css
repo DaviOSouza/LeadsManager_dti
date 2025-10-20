@@ -1,0 +1,40 @@
+.tab-item {
+  cursor: pointer;
+  padding: 10px; 
+  transition: border-color 0.3s;
+}
+
+.tab-item.active {
+  border-bottom: 3px solid orange; 
+  font-weight: bold;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.btn-orange {
+    background-color: orange !important;
+    border-color: darkorange  !important;
+    border-radius: 0 !important;  
+    color: white !important;
+    box-shadow: 0 2px 0 darkorange;
+}
+
+.btn-orange:hover {
+    background-color: darkorange !important;
+    border-color: darkorange !important;
+}
+
+.btn-gray {
+    background-color: #dde6ee !important; 
+    border-color: #dde6ee !important;
+    border-radius: 0 !important;
+    color: black !important;
+    box-shadow: 0 2px 0 #5a6268;
+}
+
+.btn-gray:hover {
+    background-color: #dde6ee !important;
+    border-color: #dde6ee !important;
+}
