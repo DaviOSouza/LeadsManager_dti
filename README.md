@@ -20,12 +20,14 @@ cd NOME_DO_REPOSITORIO
 
 ## **Principais Instruções**
 
-1.0 - Crie um arquivo .env na raiz da pasta frontend com a variável do backend: REACT_APP_API_URL=http://localhost:5000 (sua porta do backend/api)
+1.0 - Crie um arquivo .env na raiz da pasta frontend com a variável do backend: REACT_APP_API_URL=http://localhost:5000 (sua porta da api)
 
 2.0 - Instale as dependências do front com: cd frontend -> npm install -> npm start (O frontend será aberto em http://localhost:3000)
 
 3.0 - Criar uma tabela em um banco SQL;
+
 3.1 - No appsettings.json do backend colar sua string de conexão com o banco;
+
 3.2 - Criar a tabela com o script:
 CREATE TABLE Leads (
     Id INT IDENTITY(1,1) PRIMARY KEY,
@@ -51,7 +53,7 @@ CREATE TABLE Leads (
 6 - O navegador deverá abrir automaticamente, se não, cole a url fornecida no browser
 
 ## **Testar Aplicação**
-Infelizmente não foi criado uma formulário para criação de Leads, portanto recomendo o uso do Swagger para teste e visualização da api. Ao criar uma nova Lead, recomendo apagar os campos do json: Data, Status e Id. Pois são valores obtidos automaticamente e no caso de Status, iniciado com Default.
+Infelizmente não foi criado uma formulário para criação de Leads, portanto recomendo o uso do Swagger para teste e visualização da api. Ao criar uma nova Lead, recomendo apagar os campos do json: Data, Status e Id. Pois são valores obtidos automaticamente e no caso de Status, iniciado como Default = Invited.
 Em um cenário de Formulário seria possível fazer este contorno bloqueando campos ou pegando-os "por de baixo dos panos" sem que o usuário pudesse ver.
 
-Em seguida, ao gerar ao menos uma Lead a aplicação deverá corresponder como esperado, listando-as com Status Invited e Accepted. 
+Em seguida, ao gerar ao menos uma Lead a aplicação deverá corresponder como esperado, listando-as com Status Invited e/ou Accepted. 
